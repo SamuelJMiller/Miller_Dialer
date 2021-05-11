@@ -8,6 +8,7 @@ namespace Miller_Dialer
 {
     class Phone
     {
+        // Phone instance data:
         string _company_name;
         string _phone_number;
         string _phone_type;
@@ -19,6 +20,7 @@ namespace Miller_Dialer
             _phone_type = phoneType;
         }
 
+        // Get/set blocks for each instance variable:
         public string CompanyName
         {
             get { return _company_name; }
@@ -38,6 +40,8 @@ namespace Miller_Dialer
         }
 
 
+        
+        // Default Dial() method:
         public virtual string Dial()
         {
             return CompanyName + " is being dialed using " + PhoneNumber + "...";

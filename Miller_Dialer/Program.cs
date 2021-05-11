@@ -9,6 +9,7 @@ namespace Miller_Dialer
     {
         static void Main(string[] args)
         {
+            // Populate phones array:
             Phone[] phones = { new HomePhone("CompuTest", "(303) 985-5060", "1"),
                                new CellPhone("Curtis Manufacturing", "(603) 532-4123", "2"),
                                new HomePhone("Data Functions", "(800) 876-2524", "1"),
@@ -20,6 +21,7 @@ namespace Miller_Dialer
                                new CellPhone("Hazard Comm Specialists", "(407) 783-6641", "2"),
                                new CellPhone("Komfort Support", "(714) 472-4409", "2")};
 
+            // Output appropriate message for each phone:
             for ( int i = 0; i < phones.Length; ++i )
             {
                 Console.WriteLine(phones[i].Dial());

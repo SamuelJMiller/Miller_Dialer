@@ -8,6 +8,7 @@ namespace Miller_Dialer
 {
     class HomePhone : Phone
     {
+        // Pass data to parent class Phone:
         public HomePhone(string companyName, string phoneNumber, string phoneType) : base(companyName, phoneNumber, phoneType)
         {
             
